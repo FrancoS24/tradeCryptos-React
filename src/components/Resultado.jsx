@@ -12,7 +12,7 @@ const Contenedor = styled.div`
 `
 const Imagen = styled.img`
   display: block;
-  width: 145px;
+  width: 140px;
   
 `
 const Div = styled.div`
@@ -27,6 +27,8 @@ const Texto = styled.p`
   span {
     font-weight: 700;
     color: #66A2FE;
+    display: flex;
+    flex-direction: column;
   }
   &::after { //pseudo elemento
     content: '';
@@ -44,6 +46,8 @@ const Precio = styled.p`
   font-size: 23px;
   
   span {
+    display: flex;
+    flex-direction: column;
     font-weight: 700;
     color: #66A2FE;
   }
@@ -67,10 +71,18 @@ const Resultado = ({resultado}) => {
         src={`https://cryptocompare.com/${IMAGEURL}`} 
         alt="imagen" />
       <Div>
-        <Precio>El Precio es de: <span>{PRICE}</span></Precio>
-        <Texto>Precio más alto del día: <span>{HIGHDAY}</span></Texto>
-        <Texto>Precio más bajo del día: <span>{LOWDAY}</span></Texto>
-        <Texto>Variación últimas 24 horas: <span>{CHANGEPCT24HOUR}</span></Texto>
+        <Precio>El Precio es de: 
+          <span>{PRICE}</span>
+        </Precio>
+        <Texto>Precio más alto del día: 
+          <span>{HIGHDAY}</span>
+        </Texto>
+        <Texto>Precio más bajo del día: 
+          <span>{LOWDAY}</span>
+        </Texto>
+        <Texto>Variación últimas 24 horas: 
+          <span>{CHANGEPCT24HOUR}</span>
+        </Texto>
       </Div>  
     </Contenedor>
   )
