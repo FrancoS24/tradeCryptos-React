@@ -5,14 +5,16 @@ const Contenedor = styled.div`
   color: #fff;
   border-radius: 10px;
   display: flex;
-  align-items: CENTER;
+  align-items: center;
+  text-align: start;
+  flex-direction: row-reverse;
  
   gap: 1rem;
   margin-top: 30px;
 `
 const Imagen = styled.img`
   display: block;
-  width: 140px;
+  width: 170px;
   
 `
 const Div = styled.div`
@@ -22,7 +24,7 @@ const Div = styled.div`
 `
 
 const Texto = styled.p`
-  font-size: 18px;
+  font-size: 20px;
   
   span {
     font-weight: 700;
@@ -43,7 +45,7 @@ const Texto = styled.p`
 
 
 const Precio = styled.p`
-  font-size: 23px;
+  font-size: 25px;
   
   span {
     display: flex;
